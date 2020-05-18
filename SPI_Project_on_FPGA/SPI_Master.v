@@ -1,4 +1,4 @@
-module SPI_Master_With_Single_CS
+module SPI_Master
   #(parameter SPI_MODE = 0,
     parameter CLKS_PER_HALF_BIT = 2,
     parameter MAX_BYTES_PER_CS = 2,
@@ -148,4 +148,4 @@ module SPI_Master_With_Single_CS
 
   assign o_TX_Ready  = ((r_SM_CS == IDLE) | (r_SM_CS == TRANSFER && w_Master_Ready == 1'b1 && r_TX_Count > 0)) & ~i_TX_DV;
 
-endmodule // SPI_Master_With_Single_CS
+endmodule // SPI_Master
