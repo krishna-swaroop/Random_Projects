@@ -30,6 +30,7 @@ int main() {
     while(counter < 100000){ //delay loop
     ++ counter;
     }
+    counter = 0;
     GPIOF_DATA  = 0x00U;  // Disabling the Red Bit in the register.
     while(counter < 100000){ // delay loop
     ++ counter;
