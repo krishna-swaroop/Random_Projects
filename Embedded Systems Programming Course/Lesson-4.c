@@ -29,6 +29,7 @@ int main() {
     while(counter < 100000){
     ++ counter;
     }
+    counter = 0;
     *((unsigned int*)0x400253FCU) = 0x00U;  // Disabling the Red Bit in the register.
     while(counter < 100000){
     ++ counter;
