@@ -25,9 +25,11 @@ int main(){
   SysTick->VAL  = 0U;
   SysTick->CTRL = (1U << 2) | (1U << 1) | 1U ;
   
+  __enable_interrupt();
+  
   // Blink Red LED  
   while(1) {
-    delay(500000);
+    // Things can be put here for the CPU to do while it waits for the interrupt.
   }
   
   //return 0;
