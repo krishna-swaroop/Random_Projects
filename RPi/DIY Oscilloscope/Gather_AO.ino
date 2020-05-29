@@ -8,6 +8,9 @@ char triggerType = '2';
 void setup(){
   Serial.begin(115200);
   pinMode(13,OUTPUT);
+  pinMode(4, INPUT);
+  pinMode(3, INPUT);
+  pinMode(0, INPUT);
 
   //set up fast sampling mode
   ADCSRA = (ADCSRA & 0xf8) | 0x04; 
