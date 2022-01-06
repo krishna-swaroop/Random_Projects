@@ -439,7 +439,7 @@ void setup() {
   tft.begin(ID);
   ///////////////////////////////////////////////////////////////////////////
   
-  testRoundRects();
+  transitionAnimation();
   delay(1000);
   drawHomeScreen();
   /* Test Code
@@ -549,7 +549,7 @@ void initSlideShow(void) {
   // testFilledTriangles(HOTPINK);
 
   // Page Border
-  testRoundRects();
+  transitionAnimation();
   delay(300);
   tft.drawRoundRect(0, 0, 240, 310, 8, WHITE);
   tft.fillRoundRect(2, 2, 235, 305 , 8, WHITE);
@@ -616,7 +616,7 @@ void insertBackButton(int x, int y){
 }
 void drawPageOne(void){
   // Design and add page elements 
-  testRoundRects();
+  transitionAnimation();
   delay(300);
   tft.drawRoundRect(0, 0, 240, 310, 8, WHITE);
   tft.fillRoundRect(2, 2, 235, 305 , 8, WHITE);
@@ -659,7 +659,7 @@ void drawPageOne(void){
 }
 void drawPageTwo(void){
   // Design and add page elements 
-  testRoundRects();
+  transitionAnimation();
   delay(300);
   tft.drawRoundRect(0, 0, 240, 310, 8, WHITE);
   tft.fillRoundRect(2, 2, 235, 305 , 8, WHITE);
@@ -693,7 +693,7 @@ void drawPageTwo(void){
         delay(1000);
   */      
 }
-void testRoundRects() {
+void transitionAnimation() {
     // unsigned long start;
     int           w, i, i2, red, step,
                   cx = tft.width()  / 2 - 1,
